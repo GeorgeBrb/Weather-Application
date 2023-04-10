@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!--making a card to hold the weather information-->
+      <div class="search">
+        <input type="text" placeholder="Search City" spellcheck="false" />
+        <button><img src="images/search.png" /></button>
+      </div>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon" />
+        <h1 class="temp">15°c</h1>
+        <h2 class="city">Bucuresti</h2>
+        <div class="details">
+          <div class="parameters">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity">50%</p>
+              <p class="humidity-text">Humidity</p>
+            </div>
+          </div>
+          <div class="parameters">
+            <img src="images/wind.png" />
+            <div>
+              <p class="wind">5 km/h</p>
+              <p class="wind-text">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="forecast"></div>
+    </div>
+  </body>
+  <script type="module" src="app1.js"></script>
+</html>
