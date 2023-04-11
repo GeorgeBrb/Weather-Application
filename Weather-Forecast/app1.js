@@ -1,7 +1,7 @@
 const apiKey = "3ca96972c0e45ee6ce137284088d50e4";
 const apiURL =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-const searchForm = document.querySelector(".search input");
+const searchInput = document.querySelector(".search input");
 const searchButton = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
@@ -62,12 +62,12 @@ async function getCurrentLocation() {
 
 // Adaugarea listenerilor de evenimente pentru căutarea vremii
 searchButton.addEventListener("click", () => {
-  checkWeather(searchForm.value);
+  checkWeather(searchInput.value);
 });
 
-searchForm.addEventListener("keyup", (event) => {
+searchInput.addEventListener("keyup", (event) => {
   if (event.keyCode === 13) {
-    checkWeather(searchForm.value);
+    checkWeather(searchInput.value);
   }
 });
 
